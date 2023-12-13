@@ -1,0 +1,55 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Brown Bold";
+    src: url(fonts/Brown\ Bold.ttf);
+}
+
+@font-face {
+    font-family: "Brown Light";
+    src: url(fonts/BrownLight\ Regular.ttf);
+}
+
+@font-face {
+    font-family: "Brown Medium";
+    src: url(fonts/BrownMedium\ Regular.ttf);
+}
+
+@font-face {
+    font-family: "Sofia Pro";
+    src: url(fonts/sofiapro-light.otf);
+}
+
+body {
+    opacity: 0.04;
+    background: var(--cl-green, #2EC4B6);
+    padding: 5.622vw 9.722vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    gap: 3.467vw;
+}
+
+svg {
+    width: 5.37vw;
+    height: 5.556vw;
+    filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.10));
+}
+
+h1 {
+    color: var(--cl-black, #000B0A);
+    font-family: "Brown Bold", sans-serif;
+    font-size: 2.778vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 3.472vw; /* 125% */
+    letter-spacing: -0.056vw;
+}
