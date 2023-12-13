@@ -25,20 +25,21 @@
 }
 
 body {
-    opacity: 0.04;
-    background: var(--cl-green, #2EC4B6);
+    background: var(--cl-green, rgb(46, 196, 182, 0.04));
     padding: 5.622vw 9.722vw;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 #content {
     display: flex;
     flex-direction: column;
-    gap: 3.467vw;
+    gap: 1.389vw;
 }
 
 svg {
+    margin-bottom: calc(3.467vw - 1.389vw);
     width: 5.37vw;
     height: 5.556vw;
     filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.10));
@@ -46,10 +47,31 @@ svg {
 
 h1 {
     color: var(--cl-black, #000B0A);
-    font-family: "Brown Bold", sans-serif;
+    font-family: "Brown Light", sans-serif;
     font-size: 2.778vw;
     font-style: normal;
     font-weight: 700;
     line-height: 3.472vw; /* 125% */
     letter-spacing: -0.056vw;
+}
+
+p {
+    color: var(--cl-grey, #737373);
+    font-family: "Brown Light";
+    font-size: 1.111vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.736vw; /* 156.25% */
+}
+
+form {
+    width: 40.278vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(1fr, 7);
+    column-gap: 1.667vw;
+    padding: 2.778vw;
+    border-radius: 0.375rem;
+    background: #FFF;
+    box-shadow: 0px 4px 50px 0px rgba(4, 8, 19, 0.10);
 }
